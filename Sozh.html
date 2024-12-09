@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waimiles Cosmetics</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(15, 15, 15, 0.63); /* Полупрозрачный фон */
+            z-index: 10;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 5px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        .block {
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        } 
+        .big {
+            background: #444 url(img/sen.jpg) no-repeat center center;
+            background-size: cover;  
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            filter: saturate(50%) brightness(70%);
+        }
+        .title {
+            font-size: 5vw;
+            text-transform: uppercase;
+            letter-spacing: 1vw;
+            border-bottom: 0.4vw solid #fff;
+            padding-bottom: 1.5vw;
+        }
+
+        .title::after {
+            content: ' ';
+            padding-right: 4vw;
+        }
+        @media (max-width: 768px) {
+            .title {
+                font-size: 8vw;
+                letter-spacing: 0.5vw;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="sait1.html">Главная страница</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+            <li><a href="about.html">O нас</a></li>
+            <li><a href="product.html">Товары</a></li>
+        </ul>
+    </nav>
+    <div class="block">
+        <div class="big"></div>  
+        <h1 class="title">Waimiles Cosmetics</h1>
+    </div>
+
+</body>
+</html>

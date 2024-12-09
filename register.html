@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красивая Форма</title>
+    <style>
+        /* Фон страницы */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background:  url('img/sen.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 5px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            margin-top: 80px;
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .form-container {
+            background: rgba(248, 242, 242, 0.638);
+            padding: 70px 80px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .form-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2d3436;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            background: #0984e3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background: #74b9ff;
+        }
+
+        .form-container p {
+            font-size: 14px;
+            color: #636e72;
+        }
+
+        .form-container p a {
+            color: #0984e3;
+            text-decoration: none;
+        }
+
+        .form-container p a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.525);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+        }
+
+        th {
+            background: #0984e3;
+            color: white;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #e6eef0;
+        }
+
+        h4 {
+            max-width: 800px;
+            text-align: justify;
+            line-height: 1.6;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.548);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Sozh.html">Главная страница</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="product.html">Товары</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="form-container">
+            <h2>Регистрация</h2>
+            <form>
+                <input type="text" placeholder="Имя" required>
+                <input type="text" placeholder="Фамилия" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <input type="password" placeholder="Подтвердите пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <p>Уже есть аккаунт? <a href="#">Войти</a></p>
+        </div>
+
+        <h2>Оплата и доставка</h2>
+        <h1>ДОСТАВКА</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Доставка</th>
+                    <th>г. Алматы</th>
+                    <th>По Казахстану</th>
+                    <th>По СНГ и другим странам</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Заказ ниже 30 000 тенге</td>
+                    <td>2000 тенге</td>
+                    <td>2500 тенге</td>
+                    <td>Согласно тарифам службы доставки</td>
+                </tr>
+                <tr>
+                    <td>Заказ выше 30 000 тенге</td>
+                    <td>БЕСПЛАТНО</td>
+                    <td>БЕСПЛАТНО</td>
+                    <td>Согласно тарифам службы доставки</td>
+                </tr>
+                <tr>
+                    <td>Заказ ниже 120 000 тенге</td>
+                    <td>БЕСПЛАТНО</td>
+                    <td>БЕСПЛАТНО</td>
+                    <td>БЕСПЛАТНО</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>ОПЛАТА</h1>
+        <h4>
+            Онлайн с помощью кредитной карты Visa/Master Card. Переводом средств на расчетный счет. <br><br>
+            Наш сайт подключен к интернет-эквайрингу. Вы можете оплатить товар банковской картой Visa или Mastercard. После подтверждения товара откроется защищенное окно с платежной страницей процессингового центра.
+        </h4>
+    </div>
+</body>
+</html>
+
+        
+    
+
+   
